@@ -1,0 +1,472 @@
+<!doctype html>
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Amrita</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 8]><link rel="stylesheet" href="css/styles_ie.css" type="text/css" media="screen" /><![endif]-->
+  <script src="js/jquery-1.4.2.min.js"></script>
+  <script src="js/modernizr-1.6.min.js"></script>
+  <script src="js/jquery.bxSlider.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+  			// assign the slider to a variable
+  			var slider = $('.gallery-list').bxSlider({
+    			controls: false,
+    			displaySlideQty:3,
+    			moveSlideQty:3
+  			});
+
+  			$(window).resize(function() {
+					 slider.reloadShow();
+			});
+  			$('.gallery-nav a').click(function(){
+   			var thumbIndex = $('.gallery-nav a').index(this);
+    			slider.goToSlide(thumbIndex);
+ 
+    			$('.gallery-nav a').removeClass('pager-active');
+    			$(this).addClass('pager-active');
+    			return false;
+  			});
+
+  			$('.gallery-nav a:first').addClass('pager-active');
+		});
+		
+  </script>
+</head>
+<body>
+<div class="page-wrap">
+	<div class="page-hold">
+		<!-- header -->
+		<header>
+			<div id="header">
+				<strong class="logo"><a href="#">Amrita</a></strong>
+				<div class="sun">sun</div>
+				<ul id="nav">
+					<li><a href="#">Об издательстве</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Партнеры и спонсоры</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+					<li><a href="#">Вакансии</a></li>
+				</ul>
+				<!-- login -->
+				<div class="form-login">
+					<form action="">
+						<fieldset>
+							<strong>Регистрация</strong>
+							<div class="inp-bg"><input type="text" placeholder="Логин" /></div>
+							<div class="inp-bg"><input type="text" placeholder="Пароль" /></div>
+							<input type="submit" class="btn-login" value="Вход" />
+						</fieldset>
+					</form>
+				</div>
+				<!-- social -->
+				<ul class="social-nav">
+					<li class="icq"><a href="#">icq</a></li>
+					<li class="vkontakte"><a href="#">vkontakte</a></li>
+					<li class="skype"><a href="#">skype</a></li>
+				</ul>
+				<!-- phone -->
+				<strong class="phone">(499) 264-05-89</strong>
+				<!-- form search -->
+				<div class="form-search">
+					<form action="">
+						<fieldset>
+							<input type="submit" class="btn-search" value="Поиск" />
+							<input type="text" class="field" />
+						</fieldset>
+					</form>
+				</div>
+				<!-- main nav -->
+				<ul class="sub-nav">
+					<li class="active"><a href="#"><span>Издательство</span></a></li>
+					<li><a href="#"><span>Магазин</span></a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- main -->
+		<div id="main">
+			<div class="main-frame">
+				<div class="main-hold clearfix">
+					<div class="main-top"><div class="main-topr"></div></div>
+					<!-- main columns -->
+					<div class="main-columns clearfix">
+						<!-- nav-bar -->
+						<div class="nav-bar clearfix">
+							<div class="tags">
+								<img src="images/tags.png" width="320" height="246" alt="" />
+							</div>
+							<!-- main nav -->
+							<nav>
+								<div class="main-nav">
+									<ul>
+										<li class="active"><a href="#">Готовятся к изданию</a></li>
+										<li><a href="#">Наши авторы</a></li>
+										<li><a href="#">Новым авторам</a></li>
+										<li><a href="#">Обзоры рецензии</a></li>
+										<li><a href="#">Полиграфические услуги</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">События</a></li>
+										<li><a href="#">Интернет-магазин</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<!-- content -->
+						<div class="main-content cms_content clearfix">
+							<div class="col">
+								<div class="col-hold clearfix">
+									<div class="pict-heading clearfix">
+										<img src="images/pict1.jpg" width="309" height="205" alt="" />
+										<h2>Об издательстве</h2>
+									</div>
+									<p>Этот сайт является информационным порталом Издательского Дома «Амрита-Русь». Мы предлагаем вам духовную, эзотерическую и психологическую литературу – всё самое лучшее из западных и восточных традиций.</p>
+									<p>Почему мы выпускаем книги именно такой направленности? Потому что мы все (да-да, и работники нашего издательства в том числе) стараемся найти ответы на вечные вопросы, волнующие человечество вот уже пару-тройку тысячелетий.</p>
+									<p>Что значит наше название? Слово «амрита» восходит своими корнями к индуистской мифологии и означает «напиток бессмертия». В современном мире частичного рассмотрения какого-либо предмета или явления уже недостаточно – необходим целостный подход. Поэтому и соединились Амрита и Русь в столь удачную цельную комбинацию, сочетающую в себе индийскую мудрость и самобытную русскую.</p>
+								</div>
+							</div>
+							<div class="col">
+								<div class="col-hold clearfix">
+									<div class="pict-heading clearfix">
+										<img src="images/pict2.jpg" width="309" height="205" alt="" />
+										<h2>События</h2>
+									</div>
+									<ul class="list-news">
+										<li>
+											<h3><a href="#">вечные вопросы</a></h3>
+											<p>Этот сайт является информационным порталом Издательского Дома «Амрита-Русь». Мы предлагаем вам духовную, эзотерическую и психологическую литературу – всё самое лучшее из западных и восточных традиций.</p>
+											<a href="#" class="more">more</a>
+										</li>
+										<li>
+											<h3><a href="#">вечные вопросы</a></h3>
+											<p>Этот сайт является информационным порталом Издательского Дома «Амрита-Русь». Мы предлагаем вам духовную, эзотерическую и психологическую литературу – всё самое лучшее из западных и восточных традиций.</p>
+											<a href="#" class="more">more</a>
+										</li>
+										<li>
+											<h3><a href="#">вечные вопросы</a></h3>
+											<p>Этот сайт является информационным порталом Издательского Дома «Амрита-Русь». Мы предлагаем вам духовную, эзотерическую и психологическую литературу – всё самое лучшее из западных и восточных традиций.</p>
+											<a href="#" class="more">more</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- banner -->
+					<div class="banner clearfix">
+						<img src="images/banner.jpg" width="945" height="100" alt="" />
+					</div>
+					<!-- heading -->
+					<div class="heading clearfix">
+						<h2>Хиты продаж</h2>
+					</div>
+					<!-- gallery -->
+					<div class="gallery clearfix">
+						<div class="gallery-nav">
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+						<!-- list -->
+						<div class="gallery-hold clearfix">
+							<ul class="gallery-list">
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- heading -->
+					<div class="heading clearfix">
+						<h2>Хиты продаж</h2>
+					</div>
+					<!-- gallery -->
+					<div class="gallery clearfix">
+						<div class="gallery-nav">
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+						<!-- list -->
+						<div class="gallery-hold clearfix">
+							<ul class="gallery-list">
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrap">
+										<div class="img-book"><img src="images/book1.jpg" width="95" height="156" alt="" /></div>
+										<div class="info-book clearfix">
+											<h3>Становление души, или Парадоксальная философия.</h3>
+											<strong class="author">Т.1. 2-е изд. Секлитова Л.А., Стрельникова Л.Л.</strong>
+											<p>Вниманию читателей представлен, пожалуй, самый знаковый труд Л.А.</p>
+											<div class="price-hold clearfix">
+												<a href="#" class="btn-buy">Купить</a>
+												<strong class="price">367 р.</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- main bottom -->
+					<div class="main-btm"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<footer>
+	<div class="footer-wrap">
+		<div id="footer">
+			<div class="sun-footer">sun</div>
+			<p class="copyright">Амрита Русь © 2011</p>
+			<p class="develop-by">Разработка сайта <a href="Webdevelop.pro">Webdevelop.pro</a></p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="js/clearinput.js"></script>
+</body>
+</html>
